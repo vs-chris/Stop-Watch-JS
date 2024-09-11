@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.container {
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+
+.stop-watch {
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    background: linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.5)) ,url(images/pexels-karolina-grabowska-4046792.jpg) 0 0 / cover no-repeat;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 200px auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stop-watch h1 {
+    font-size: 4em;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+}
+
+.stop-watch .buttons {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    top: 50px;
+}
+
+.stop-watch .buttons button {
+    padding: 5px;
+    margin: 0 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.stop-watch .buttons button svg {
+    width: 10px;
+    fill: whitesmoke;
+}
+
+
+.stop-watch .buttons button:nth-child(2) {
+    width: 55px;
+    height: 55px;
+    border: none;
+    background-color: rgb(255, 123, 0);
+    transition: 0.2s;
+}
+
+.stop-watch .buttons button:nth-child(2):hover {
+    background-color: rgb(255, 196, 0);
+}
+
+.stop-watch .buttons button:nth-child(2) svg {
+    width: 16px;
+    position: relative;
+    left: 2px;
+}
+
+.stop-watch .buttons button:nth-child(3) svg {
+    width: 13px;
+}
